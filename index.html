@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Life is too short to have boring hair</title>
+
+		<style>
+			
+			/* Basic CSS comment */	
+			body {
+				background: #BBB;
+				color: white;
+				width: 960px;
+				margin: 0 auto;
+                font-size: 30px;
+                color: black;
+			}
+
+			h1 {
+				font-size: 80px;
+				color: #333	;
+			}
+
+		</style>
+
+        <script>
+
+            /* this is an event */
+            /* alert("I'm annoying"); */
+            // Single line comment 
+            
+            var username = prompt("Hello, Who are you?");
+            var haircolor = new Array("blonde", "black", "pink", "purple", "blue", "red");
+
+			var randomNumber = Math.floor(Math.random()*haircolor.length);
+			var hairname = haircolor[randomNumber];
+			var img = '<img src="' + hairname + '.png">';
+            
+			console.log(username);
+            
+            if (username==="Chris") {
+                document.write("<h1>Hello " + username + ". Life is too short to have boring hair. Dye your hair " + hairname + "!</h1>" + img);    
+            } else if (username==="Sara") {
+				document.write("<h1>Hello " + username + ", dye your roots in blonde");
+			} else {
+                document.write("<h1>Hello " + username + ". Life is too short to have boring hair. Dye your hair " + hairname + "!</h1>" + img);
+            }
+
+
+        </script>
+
+	</head>
+ 	
+	<body>
+	</body>
+
+</html>
